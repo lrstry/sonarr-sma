@@ -1,5 +1,5 @@
 ARG ffmpeg_tag=snapshot-vaapi
-ARG sonarr_tag=latest
+ARG sonarr_tag=preview
 FROM jrottenberg/ffmpeg:${ffmpeg_tag} as ffmpeg
 FROM linuxserver/sonarr:${sonarr_tag}
 LABEL maintainer="eikowagenknecht <eiko.wagenknecht@web.de>"
