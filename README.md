@@ -38,6 +38,14 @@ For usage on Synology Diskstation:
 - Import the json container configuration into the diskstation
 - Now you can run it
 
+Don't forget to also set the vaapi codec as the first entry in the autoProcess.ini file, otherwise the hardware accelleration will not be used. Example:
+```
+[Video]
+...
+codec = h264vaapi, h265vaapi, h264, x264, hevc, x265
+...
+```
+
 Please see [the official repository](https://github.com/mdhiggins/sonarr-sma) for everything else.
 
 ## Links
