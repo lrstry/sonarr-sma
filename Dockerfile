@@ -1,6 +1,5 @@
-ARG ffmpeg_tag=snapshot-vaapi2004
 ARG sonarr_tag=preview
-FROM jrottenberg/ffmpeg:${ffmpeg_tag} as ffmpeg
+FROM eikowagenknecht/ffmpeg-vaapi:latest as ffmpeg
 FROM linuxserver/sonarr:${sonarr_tag}
 LABEL maintainer="eikowagenknecht <eiko.wagenknecht@web.de>"
 
