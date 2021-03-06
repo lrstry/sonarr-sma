@@ -48,7 +48,7 @@ RUN \
     /var/lib/apt/lists/* \
     /var/tmp/*
 
-EXPOSE 8989
+EXPOSE 8990
 
 VOLUME /config
 VOLUME /usr/local/sma/config
